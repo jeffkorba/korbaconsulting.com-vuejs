@@ -1,0 +1,35 @@
+@use '@/sass/_variables.scss' as variables;
+@use '@/sass/_fonts.scss';
+
+body {
+
+	font-family: variables.$primaryFont;
+	font-size: 16px;
+	font-weight: 400;
+	color: #333;
+}
+
+a {
+
+	&:link, &:visited {
+
+		color: #666;
+		text-decoration: none;
+	}
+
+	&:hover, &:active {
+	
+		color: #000;
+		text-decoration: underline;
+	} 
+}
+
+strong {
+
+	font-weight: 700;
+}
+
+h6 {
+
+	font-weight: 700;
+}

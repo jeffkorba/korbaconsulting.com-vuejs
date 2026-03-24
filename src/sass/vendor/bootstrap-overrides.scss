@@ -1,0 +1,38 @@
+@use 'sass:color';
+@use '@/sass/_variables.scss' as variables;
+
+.card {
+
+	.card-title {
+	
+		font-weight: 700;
+	}
+}
+
+.btn {
+
+	&.btn-primary {
+
+		color: #fff;
+		background-color: variables.$blue;
+		border-color: variables.$blue;
+		text-decoration: none;
+
+		&:hover {
+		
+			background-color: color.adjust(variables.$blue, $lightness: 15%);
+			border-color: color.adjust(variables.$blue, $lightness: 15%);
+			text-decoration: none;
+		}
+
+		&:active {
+	
+			color: #fff;
+			background-color: variables.$blue;
+			border-color: variables.$blue;
+			text-decoration: none;
+		}
+
+		transition: none;
+	}
+}
